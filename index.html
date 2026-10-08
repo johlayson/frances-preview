@@ -1,0 +1,830 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FRANCES | Lab-Grown Diamond Jewellery</title>
+<meta name="description" content="Lab-grown diamond jewellery in sterling silver, 18k gold vermeil and solid 9ct gold. Accessible luxury, everyday glamour. Every piece comes with a certificate of authenticity.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#FAF7F2">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231B1814'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='34' fill='%23FAF7F2'%3EF%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ivory:#FAF7F2; --linen:#F2ECE3; --stone:#E6DED2; --line:#E2D9CC;
+  --ink:#1B1814; --ink-2:#3A342D; --muted:#7A7066; --champagne:#B4966A; --champagne-deep:#8E7148;
+  --r:2px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ivory);color:var(--ink);font:400 15px/1.7 Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:400;line-height:1.05;margin:0 0 .4em;letter-spacing:-.005em}
+h1{font-size:clamp(2.8rem,6.4vw,5.4rem)}
+h2{font-size:clamp(2.2rem,4.4vw,3.5rem)}
+h3{font-size:1.55rem}
+em{font-style:italic}
+p{margin:0 0 1em}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+.eyebrow{font-size:.7rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--champagne-deep);margin:0 0 1.4em}
+.muted{color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;padding:1.05em 2em;font:600 .72rem/1 Manrope,sans-serif;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;border:1px solid var(--ink);background:var(--ink);color:var(--ivory);cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.btn:hover{background:var(--ink-2);border-color:var(--ink-2)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--ivory)}
+.btn.light{background:var(--ivory);color:var(--ink);border-color:var(--ivory)}
+.btn.light:hover{background:transparent;color:var(--ivory)}
+.link{font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:.3em}
+
+/* preview strip */
+.preview-note{background:var(--ink);color:#CFC6BA;font-size:.78rem;text-align:center;padding:.6em 1em;line-height:1.5}
+.preview-note a{color:#E3CFA9}
+
+/* header */
+.announce{background:var(--linen);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;text-align:center;padding:.8em 1em;color:var(--ink-2)}
+header.site{position:sticky;top:0;z-index:20;background:rgba(250,247,242,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.head{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:78px}
+.logo{font-family:"Cormorant Garamond",serif;font-size:1.9rem;letter-spacing:.42em;text-decoration:none;padding-left:.42em}
+.nav{display:flex;gap:2em;font-size:.7rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+.nav a{text-decoration:none;position:relative;white-space:nowrap}
+.nav a::after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:1px;background:currentColor;transition:right .25s}
+.nav a:hover::after{right:0}
+.head-right{justify-self:end;display:flex;gap:1.4em;align-items:center;font-size:.7rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+.head-right a{text-decoration:none;display:inline-flex;align-items:center;gap:.5em}
+.head-right svg{width:18px;height:18px}
+.list-count{display:inline-grid;place-items:center;min-width:20px;height:20px;border-radius:10px;background:var(--ink);color:var(--ivory);font-size:.62rem;letter-spacing:0;padding:0 6px}
+.menu-btn{display:none;background:none;border:0;padding:8px;cursor:pointer;color:inherit}
+.menu-btn svg{width:22px;height:22px}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.05fr 1fr;min-height:calc(100vh - 160px);min-height:calc(100svh - 160px)}
+.hero-copy{display:flex;flex-direction:column;justify-content:center;padding:72px 7vw 72px max(28px,calc((100vw - 1240px)/2 + 28px))}
+.hero-copy h1 em{color:var(--champagne-deep)}
+.hero-copy .lead{font-size:1.05rem;max-width:30em;color:var(--ink-2);margin-bottom:2.2em}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-img{position:relative;overflow:hidden;background:var(--stone)}
+.hero-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;animation:settle 2.4s cubic-bezier(.2,.7,.2,1) both}
+@keyframes settle{from{transform:scale(1.06);opacity:0}to{transform:none;opacity:1}}
+
+/* trust */
+.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--ivory)}
+.trust ul{list-style:none;margin:0 auto;padding:0;display:grid;grid-template-columns:repeat(4,1fr);max-width:1240px}
+.trust li{padding:26px 22px;text-align:center;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:500;color:var(--ink-2);border-left:1px solid var(--line)}
+.trust li:first-child{border-left:0}
+.trust b{display:block;font:italic 400 1.35rem/1.2 "Cormorant Garamond",serif;letter-spacing:0;text-transform:none;color:var(--ink);margin-bottom:.25em}
+
+section{padding:110px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:46px;flex-wrap:wrap}
+.sec-head h2{margin:0}
+
+/* collections */
+.collections{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.coll{position:relative;display:block;text-decoration:none;overflow:hidden;background:var(--stone);aspect-ratio:4/5}
+.coll img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.coll:hover img{transform:scale(1.045)}
+.coll .cap{position:absolute;left:0;right:0;bottom:0;padding:26px;color:#fff;background:linear-gradient(transparent,rgba(20,16,12,.62))}
+.coll .cap h3{margin:0 0 .1em;font-size:2rem}
+.coll .cap p{margin:0;font-size:.82rem;opacity:.9}
+.coll.signet{background:#fff}
+.coll.signet img{object-fit:contain;padding:12%}
+.coll.signet .cap{color:var(--ink);background:none}
+
+/* shop */
+.shop{background:var(--linen)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{font:600 .68rem/1 Manrope,sans-serif;letter-spacing:.18em;text-transform:uppercase;padding:.95em 1.3em;border:1px solid var(--line);background:transparent;color:var(--ink-2);cursor:pointer;transition:all .2s}
+.chip:hover{border-color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--ivory);border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:34px 22px}
+.card{display:flex;flex-direction:column}
+.card .ph{position:relative;background:#fff;aspect-ratio:1;overflow:hidden}
+.card .ph img{width:100%;height:100%;object-fit:contain;padding:8%;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.card:hover .ph img{transform:scale(1.06)}
+.card .tag{position:absolute;top:12px;left:12px;font-size:.6rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;background:var(--ivory);padding:.5em .8em}
+.card .add{position:absolute;left:12px;right:12px;bottom:12px;opacity:0;transform:translateY(8px);transition:all .3s}
+.card:hover .add,.card .add:focus{opacity:1;transform:none}
+.card .add.in{opacity:1;transform:none;background:var(--ivory);color:var(--ink)}
+.card h3{font-family:Manrope,sans-serif;font-size:.9rem;font-weight:500;line-height:1.45;margin:16px 0 4px}
+.card .meta{font-size:.78rem;color:var(--muted);margin:0 0 6px}
+.card .price{font:500 1.2rem/1.2 "Cormorant Garamond",serif}
+.card[hidden]{display:none}
+.shop-foot{margin-top:56px;text-align:center}
+
+/* editorial */
+.editorial{position:relative;padding:0;min-height:86vh;display:grid;place-items:center;color:#fff;overflow:hidden;background:#2a241e}
+.editorial img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%;opacity:.86}
+.editorial .q{position:relative;text-align:center;padding:40px 28px;max-width:860px}
+.editorial h2{font-size:clamp(3rem,8vw,6.6rem);font-style:italic;margin:0 0 .2em;text-shadow:0 2px 30px rgba(0,0,0,.25)}
+.editorial p{font-size:1.02rem;max-width:30em;margin:0 auto 2em;text-shadow:0 1px 14px rgba(0,0,0,.4)}
+
+/* colour */
+.colour{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.colour-img{position:relative}
+.colour-img .main{aspect-ratio:4/5;object-fit:cover;width:82%}
+.colour-img .float{position:absolute;right:0;bottom:-40px;width:46%;background:#fff;padding:14px;box-shadow:0 30px 60px -30px rgba(27,24,20,.45)}
+.months{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin:30px 0 22px}
+.month{border:1px solid var(--line);background:#fff;padding:12px 4px 10px;cursor:pointer;font:600 .62rem/1 Manrope,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);display:flex;flex-direction:column;align-items:center;gap:9px;transition:border-color .2s,transform .2s}
+.month i{width:22px;height:16px;border-radius:5px;background:var(--c);box-shadow:inset 0 0 0 1px rgba(0,0,0,.08),inset 0 -5px 8px rgba(0,0,0,.18),inset 0 4px 6px rgba(255,255,255,.55)}
+.month:hover{transform:translateY(-2px)}
+.month[aria-pressed="true"]{border-color:var(--ink)}
+.stone-out{min-height:3.2em;font-size:.95rem;color:var(--ink-2)}
+.stone-out b{font:italic 500 1.5rem/1 "Cormorant Garamond",serif;color:var(--ink)}
+
+/* diamonds */
+.diamonds{background:var(--ink);color:#EDE6DB}
+.diamonds .eyebrow{color:var(--champagne)}
+.dia{display:grid;grid-template-columns:1fr 1.15fr;gap:80px;align-items:center}
+.dia-img{background:#fff;aspect-ratio:1;display:grid;place-items:center;overflow:hidden}
+.dia-img img{width:100%;height:100%;object-fit:cover}
+.points{display:grid;gap:0;margin-top:34px;border-top:1px solid rgba(237,230,219,.18)}
+.point{display:grid;grid-template-columns:54px 1fr;gap:12px;padding:22px 0;border-bottom:1px solid rgba(237,230,219,.18)}
+.point span{font:italic 400 1.5rem/1 "Cormorant Garamond",serif;color:var(--champagne)}
+.point h3{font-size:1.4rem;margin:0 0 .25em;color:#fff}
+.point p{margin:0;color:#B9AFA2;font-size:.9rem}
+
+/* about */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:0;padding:0;background:var(--linen)}
+.about-img{min-height:620px;position:relative}
+.about-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.about-copy{padding:110px 8vw;display:flex;flex-direction:column;justify-content:center}
+.about-copy .sig{font:italic 400 2.4rem/1 "Cormorant Garamond",serif;margin-top:.6em;letter-spacing:.06em}
+
+/* gift + order */
+.gift{display:grid;grid-template-columns:1.1fr 1fr;gap:70px;align-items:center}
+.gift-imgs{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.gift-imgs img{aspect-ratio:3/4;object-fit:cover;width:100%}
+.gift-imgs img:last-child{margin-top:60px}
+.steps{list-style:none;padding:0;margin:30px 0 34px;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;padding:16px 0;border-bottom:1px solid var(--line)}
+.steps li::before{content:"0" counter(s);font:italic 400 1.3rem/1.2 "Cormorant Garamond",serif;color:var(--champagne-deep)}
+.steps b{display:block;font-weight:600;font-size:.92rem}
+.steps span{color:var(--muted);font-size:.88rem}
+
+/* instagram */
+.ig{padding-top:0}
+.ig-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:6px}
+.ig-grid a{display:block;aspect-ratio:4/5;overflow:hidden;position:relative;background:var(--stone)}
+.ig-grid img{width:100%;height:100%;object-fit:cover;transition:transform .8s,opacity .3s}
+.ig-grid a:hover img{transform:scale(1.06);opacity:.85}
+.ig-grid img.white{object-fit:contain;background:#fff;padding:10%}
+
+/* footer */
+footer{background:var(--ink);color:#B9AFA2;padding:80px 0 34px;font-size:.86rem}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.3fr;gap:40px}
+footer h4{font:600 .66rem/1 Manrope,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#fff;margin:0 0 1.4em}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:.7em}
+footer a{text-decoration:none}
+footer a:hover{color:#fff}
+footer .logo{color:#fff;font-size:1.7rem;padding:0;display:inline-block;margin-bottom:.6em}
+.news{display:flex;border-bottom:1px solid rgba(255,255,255,.3)}
+.news input{flex:1;min-width:0;background:transparent;border:0;color:#fff;font:inherit;padding:.8em 0;outline:none}
+.news input::placeholder{color:#8E857A}
+.news button{background:none;border:0;color:#fff;font:600 .66rem/1 Manrope,sans-serif;letter-spacing:.2em;text-transform:uppercase;cursor:pointer}
+.legal{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:60px;padding-top:24px;border-top:1px solid rgba(255,255,255,.12);font-size:.74rem;color:#8E857A}
+
+/* enquiry drawer */
+.scrim{position:fixed;inset:0;background:rgba(27,24,20,.45);opacity:0;pointer-events:none;transition:opacity .3s;z-index:40}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(440px,100%);background:var(--ivory);z-index:41;transform:translateX(100%);transition:transform .45s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column}
+body.open .scrim{opacity:1;pointer-events:auto}
+body.open .drawer{transform:none}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;padding:24px 28px;border-bottom:1px solid var(--line)}
+.drawer-head h3{margin:0;font-size:1.7rem}
+.x{background:none;border:0;font-size:1.6rem;line-height:1;cursor:pointer;color:var(--ink);padding:4px}
+.drawer-body{flex:1;overflow:auto;padding:22px 28px}
+.drawer-body .empty{color:var(--muted);text-align:center;padding:40px 0}
+.item{display:grid;grid-template-columns:72px 1fr auto;gap:14px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
+.item img{width:72px;height:72px;object-fit:contain;background:#fff;padding:6px}
+.item b{display:block;font-weight:500;font-size:.86rem;line-height:1.4}
+.item small{color:var(--muted)}
+.item button{background:none;border:0;color:var(--muted);cursor:pointer;font-size:.72rem;text-decoration:underline}
+.form{display:grid;gap:12px;margin-top:22px}
+.form label{font-size:.66rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-2);display:grid;gap:6px}
+.form input,.form textarea{font:inherit;font-size:.92rem;padding:.75em .9em;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:var(--r)}
+.form textarea{min-height:84px;resize:vertical}
+.drawer-foot{padding:20px 28px 26px;border-top:1px solid var(--line);display:grid;gap:10px}
+.drawer-foot p{margin:0;font-size:.76rem;color:var(--muted);text-align:center}
+.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,20px);background:var(--ink);color:var(--ivory);font-size:.8rem;padding:.9em 1.4em;opacity:0;transition:all .3s;z-index:60;pointer-events:none}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+body.open .toast{bottom:auto;top:24px;left:auto;right:28px;transform:translateY(-20px)}
+body.open .toast.show{transform:none}
+
+/* clip on */
+.clip{display:grid;grid-template-columns:1fr 1.2fr;gap:70px;align-items:center}
+.clip-imgs{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:end}
+.clip-imgs img{width:100%;aspect-ratio:9/16;object-fit:cover}
+.clip-imgs img:first-child{margin-bottom:70px}
+.clip-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:34px 0 36px;border-top:1px solid var(--line)}
+.clip-steps div{padding:20px 18px 0 0}
+.clip-steps b{display:block;font:italic 400 1.6rem/1.1 "Cormorant Garamond",serif;margin-bottom:.3em}
+.clip-steps span{font-size:.86rem;color:var(--muted)}
+@media (max-width:780px){
+  .clip{grid-template-columns:1fr;gap:44px}
+  .clip-imgs img:first-child{margin-bottom:40px}
+  .clip-steps{grid-template-columns:1fr}
+  .clip-steps div{padding:16px 0;border-bottom:1px solid var(--line)}
+}
+
+/* try it on */
+.try{background:var(--linen)}
+.try-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:70px;align-items:center}
+.stage{position:relative;aspect-ratio:3/4;overflow:hidden;background:#cbbfb3;cursor:zoom-in}
+.stage.zoom{cursor:zoom-out}
+.stage .inner{position:absolute;left:0;top:0;width:100%;aspect-ratio:900/1600;transform-origin:0 0;transition:transform 1.1s cubic-bezier(.2,.7,.2,1);will-change:transform}
+.stage .inner > img.model{width:100%;height:100%;display:block}
+.pend{position:absolute;left:56.67%;top:61.8%;height:auto;transform-origin:50% 0;transform:translate(-50%,-5%);filter:drop-shadow(0 2px 1.5px rgba(70,40,20,.45)) drop-shadow(0 6px 6px rgba(70,40,20,.18));transition:opacity .25s}
+.pend.swing{animation:swing 1.6s cubic-bezier(.3,.6,.3,1)}
+@keyframes swing{0%{transform:translate(-50%,-5%) rotate(9deg)}30%{transform:translate(-50%,-5%) rotate(-6deg)}55%{transform:translate(-50%,-5%) rotate(3deg)}78%{transform:translate(-50%,-5%) rotate(-1deg)}100%{transform:translate(-50%,-5%) rotate(0)}}
+.stage-ui{position:absolute;left:14px;right:14px;bottom:14px;display:flex;justify-content:space-between;align-items:center;gap:10px;pointer-events:none}
+.stage-ui > *{pointer-events:auto}
+.zoom-btn{white-space:nowrap;flex:none;font:600 .64rem/1 Manrope,sans-serif;letter-spacing:.18em;text-transform:uppercase;background:rgba(250,247,242,.92);color:var(--ink);border:0;padding:.9em 1.2em;cursor:pointer;backdrop-filter:blur(6px)}
+.stage-name{background:rgba(27,24,20,.72);color:#fff;font-size:.78rem;padding:.6em .9em;backdrop-filter:blur(6px)}
+.picks{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:28px 0 22px}
+.pick{border:1px solid var(--line);background:var(--ivory);padding:14px 8px 12px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:10px;font:500 .74rem/1.35 Manrope,sans-serif;color:var(--ink-2);text-align:center;transition:border-color .2s,transform .2s}
+.pick img{height:74px;width:auto;object-fit:contain}
+.pick:hover{transform:translateY(-2px)}
+.pick[aria-pressed="true"]{border-color:var(--ink);background:#fff}
+.try-note{font-size:.76rem;color:var(--muted);margin:16px 0 0}
+@media (max-width:780px){
+  .try-grid{display:flex;flex-direction:column;align-items:stretch;gap:0}
+  .try-copy{display:contents}
+  .try-copy > .eyebrow,.try-copy > h2,.try-copy > .muted{order:1}
+  .try-copy > .muted{margin-bottom:18px}
+  .stage{order:2;aspect-ratio:4/5}
+  .picks{order:3;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:8px;margin:12px -22px 18px;padding:0 22px 4px;scroll-padding:0 22px;scrollbar-width:none}
+  .picks::-webkit-scrollbar{display:none}
+  .pick{flex:0 0 92px;scroll-snap-align:start;font-size:.66rem;padding:10px 4px 9px;gap:6px}
+  .pick img{height:52px}
+  .try-copy > .hero-ctas{order:4}
+  .try-note{order:5}
+}
+
+/* bag + checkout */
+.card .ph .sold{position:absolute;top:12px;right:12px;font-size:.6rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.metals{display:flex;gap:8px;align-items:center;margin:2px 0 8px;font-size:.74rem;color:var(--muted)}
+.metal{width:22px;height:22px;border-radius:50%;border:1px solid var(--line);padding:2px;background:#fff;cursor:pointer}
+.metal i{display:block;width:100%;height:100%;border-radius:50%;background:var(--sw)}
+.metal[aria-pressed="true"]{border-color:var(--ink)}
+.metal.out{opacity:.35}
+.view{display:flex;flex-direction:column;flex:1;min-height:0}
+.view[hidden]{display:none}
+.item .row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:8px;flex-wrap:wrap}
+.qty{display:inline-flex;align-items:center;border:1px solid var(--line);background:#fff}
+.qty button{background:none;border:0;width:30px;height:30px;cursor:pointer;font-size:1rem;color:var(--ink)}
+.qty span{min-width:22px;text-align:center;font-size:.85rem}
+.item select{font:inherit;font-size:.8rem;border:1px solid var(--line);background:#fff;padding:.35em .4em;color:var(--ink)}
+.item .lp{font:500 1.05rem/1 "Cormorant Garamond",serif;white-space:nowrap}
+.asks h4{font:600 .66rem/1 Manrope,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-2);margin:26px 0 6px}
+.asks > p{font-size:.8rem;color:var(--muted);margin:0 0 6px}
+.totals{display:flex;justify-content:space-between;align-items:baseline;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600}
+.totals b{font:500 1.6rem/1 "Cormorant Garamond",serif;letter-spacing:0;text-transform:none}
+.btn[disabled]{opacity:.35;cursor:not-allowed}
+.back{background:none;border:0;padding:0;margin-bottom:16px;cursor:pointer;font-size:.8rem;color:var(--muted)}
+.sum{border:1px solid var(--line);background:#fff;padding:12px 14px;font-size:.82rem;display:grid;gap:4px}
+.sum div{display:flex;justify-content:space-between;gap:12px}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.form input,.form textarea{width:100%;min-width:0}
+.ship{border:0;padding:0;margin:4px 0 0;display:grid;gap:8px;min-width:0}
+.ship legend{font-size:.66rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-2);margin-bottom:8px;padding:0}
+.form .opt{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;border:1px solid var(--line);background:#fff;padding:.8em .9em;font-size:.86rem;letter-spacing:0;text-transform:none;font-weight:500;color:var(--ink);cursor:pointer}
+.form .opt small{display:block;color:var(--muted);font-weight:400;font-size:.76rem}
+.form .opt b{font-weight:500}
+.form .opt:has(input:checked){border-color:var(--ink)}
+.done{text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.done .tick{width:64px;height:64px;border-radius:50%;border:1px solid var(--champagne);display:grid;place-items:center;font-size:1.6rem;color:var(--champagne-deep);margin-bottom:18px}
+.done h3{font-size:2.2rem}
+.pnote{font-size:.78rem;color:var(--muted);background:var(--linen);padding:12px 14px;text-align:left;margin:10px 0 22px}
+.bag-ico{width:18px;height:18px}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.hero-img img{animation:none}*{scroll-behavior:auto}}
+
+@media (max-width:1020px){
+  .nav{display:none}
+  .menu-btn{display:inline-flex}
+  .head{grid-template-columns:auto 1fr auto}
+  .logo{justify-self:center}
+  .nav.show{display:grid;position:absolute;top:78px;left:0;right:0;background:var(--ivory);padding:22px 28px;gap:1.3em;border-bottom:1px solid var(--line)}
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .trust ul{grid-template-columns:repeat(2,1fr)}
+  .trust li:nth-child(3){border-left:0}
+  .trust li:nth-child(n+3){border-top:1px solid var(--line)}
+  .dia,.colour,.gift{gap:50px}
+  .foot{grid-template-columns:1fr 1fr}
+}
+@media (max-width:780px){
+  body{font-size:14.5px}
+  .wrap{padding:0 22px}
+  section{padding:76px 0}
+  .head{height:64px}
+  .nav.show{top:64px}
+  .logo{font-size:1.5rem}
+  .head-right .txt{display:none}
+  .hero{grid-template-columns:1fr;min-height:0}
+  .hero-img{order:-1;aspect-ratio:4/4.4}
+  .hero-copy{padding:44px 22px 56px}
+  .collections{grid-template-columns:1fr;gap:14px}
+  .coll{aspect-ratio:5/4}
+  .grid{grid-template-columns:repeat(2,1fr);gap:26px 12px}
+  .card .ph{aspect-ratio:auto;overflow:visible;background:none}
+  .card .ph img{aspect-ratio:1;height:auto;background:#fff}
+  .card:hover .ph img{transform:none}
+  .card .add{opacity:1;transform:none;position:static;margin-top:10px;width:100%;padding:.95em 1em;background:transparent;color:var(--ink)}
+  .card .add.in{background:var(--ink);color:var(--ivory)}
+  .dia,.colour,.gift{grid-template-columns:1fr}
+  .colour-img{margin-bottom:40px}
+  .months{grid-template-columns:repeat(4,1fr)}
+  .about{grid-template-columns:1fr}
+  .about-img{min-height:0;aspect-ratio:4/4.6}
+  .about-copy{padding:64px 22px}
+  .ig-grid{grid-template-columns:repeat(3,1fr)}
+  .foot{grid-template-columns:1fr}
+  .editorial{min-height:72vh}
+}
+</style>
+</head>
+<body>
+
+<div class="preview-note">Free homepage preview made for FRANCES by <a href="https://website.johlayson.com" target="_blank" rel="noopener">Joh Layson</a>. Your current site is untouched. Everything here can change.</div>
+
+<div class="announce">Now shop online &nbsp;·&nbsp; Certificate of authenticity with every piece</div>
+
+<header class="site">
+  <div class="wrap head">
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button>
+    <nav class="nav" aria-label="Main">
+      <a href="#shop">Shop</a><a href="#try">Try it on</a><a href="#colour">Colour</a><a href="#diamonds">Our diamonds</a><a href="#about">About</a>
+    </nav>
+    <a class="logo" href="#top" aria-label="FRANCES home">FRANCES</a>
+    <div class="head-right">
+      <a href="https://instagram.com/francesdiamonds" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
+      <a href="#" data-open aria-label="Your bag"><svg class="bag-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="txt">Bag</span> <span class="list-count" id="count">0</span></a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero" style="padding:0">
+  <div class="hero-copy">
+    <p class="eyebrow">Lab-grown diamond jewellery</p>
+    <h1>Everyday glamour, <em>within reach.</em></h1>
+    <p class="lead">Looking and feeling amazing should never be out of reach. Timeless pieces in sterling silver, 18k gold vermeil and solid 9ct gold, set with lab-grown diamonds.</p>
+    <div class="hero-ctas">
+      <a class="btn" href="#shop">Shop the edit</a>
+      <a class="btn ghost" href="#colour">Find your colour</a>
+    </div>
+  </div>
+  <div class="hero-img"><img src="assets/portrait-necklace.jpg" alt="Woman wearing a FRANCES diamond tennis necklace and ring" fetchpriority="high"></div>
+</section>
+
+<div class="trust">
+  <ul>
+    <li><b>Lab-grown</b>Real diamonds</li>
+    <li><b>Certified</b>Authenticity with every piece</li>
+    <li><b>18k vermeil</b>Thick 2.5 micron gold</li>
+    <li><b>Rhodium-coated</b>Sterling silver</li>
+  </ul>
+</div>
+
+<section id="collections">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><p class="eyebrow">Collections</p><h2>Find your <em>forever</em> piece</h2></div>
+      <a class="link" href="#shop">View all jewellery</a>
+    </div>
+    <div class="collections">
+      <a class="coll rv" href="#shop" data-go="demi"><img src="assets/stacked-rings.jpg" alt="Stacked diamond rings and huggie earrings" loading="lazy"><div class="cap"><h3>Demi-fine</h3><p>Sterling silver &amp; 18k gold vermeil</p></div></a>
+      <a class="coll rv" href="#shop" data-go="fine"><img src="assets/eternity-hand.jpg" alt="Gold diamond eternity ring on a hand" loading="lazy"><div class="cap"><h3>Fine</h3><p>Solid 9ct gold</p></div></a>
+      <a class="coll signet rv" href="#colour"><img src="assets/p-colour-signet-gold.jpg" alt="The Colour Signet in twelve colours" loading="lazy"><div class="cap"><h3>Colour</h3><p>Your birthstone, or simply the colour you love</p></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="shop" id="shop">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><p class="eyebrow">The edit</p><h2>Shop <em>FRANCES</em></h2></div>
+      <div class="chips" role="group" aria-label="Filter">
+        <button class="chip" data-f="all" aria-pressed="true">All</button>
+        <button class="chip" data-f="ring" aria-pressed="false">Rings</button>
+        <button class="chip" data-f="neck" aria-pressed="false">Necklaces</button>
+        <button class="chip" data-f="ear" aria-pressed="false">Earrings</button>
+        <button class="chip" data-f="brace" aria-pressed="false">Bracelets</button>
+      </div>
+    </div>
+    <div class="grid" id="grid"></div>
+    <div class="shop-foot"><p class="muted">Pieces marked <b>Price on request</b> go in your bag as a question, and we reply with the price.</p></div>
+  </div>
+</section>
+
+<section class="editorial">
+  <img src="assets/hands-bracelet.jpg" alt="Diamond tennis bracelet and rings worn together" loading="lazy">
+  <div class="q rv">
+    <h2>Forever chic</h2>
+    <p>Timeless, elevated and easy to wear. Made to be dressed up or worn every day.</p>
+    <a class="btn light" href="#shop">Discover the pieces</a>
+  </div>
+</section>
+
+<section id="clip">
+  <div class="wrap clip">
+    <div class="rv">
+      <p class="eyebrow">Clip on. Clip off.</p>
+      <h2>Pick your pendant. <em>Pick your chain.</em></h2>
+      <p class="muted">Clip your favourite pendants onto your chain and change the combination whenever you feel like it. One chain, endless looks.</p>
+      <div class="clip-steps">
+        <div><b>Pendant</b><span>Pear, oval, marquise or round, in white or colour.</span></div>
+        <div><b>Chain</b><span>Ours, or the one you already love.</span></div>
+        <div><b>Change</b><span>Swap it for the day, the outfit, the mood.</span></div>
+      </div>
+      <div class="hero-ctas"><a class="btn" href="#shop" data-go="neck">Shop pendants</a></div>
+    </div>
+    <div class="clip-imgs rv">
+      <img src="assets/ig-reel-portrait.jpg" alt="Wearing a FRANCES pendant on a fine chain" loading="lazy">
+      <img src="assets/ig-colour-charms.jpg" alt="Colourful lab-grown diamond pendants and clasps on orange" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="try" id="try">
+  <div class="wrap try-grid">
+    <div class="stage rv" id="stage" title="Tap to zoom">
+      <div class="inner" id="inner">
+        <img class="model" src="assets/portrait-tennis.jpg" alt="Model wearing a tennis necklace with a clip-on FRANCES pendant">
+        <img class="pend" id="pend" src="assets/try-pear-151.webp" alt="">
+      </div>
+      <div class="stage-ui"><span class="stage-name" id="stageName"></span><button class="zoom-btn" id="zoomBtn">Zoom in</button></div>
+    </div>
+    <div class="rv try-copy">
+      <p class="eyebrow">Try it on</p>
+      <h2>Which one is <em>you?</em></h2>
+      <p class="muted">Tap a pendant to clip it onto the chain and see how it sits. Zoom in to see the stone up close.</p>
+      <div class="picks" id="picks"></div>
+      <div class="hero-ctas">
+        <button class="btn" id="tryAdd">Ask for price</button>
+        <a class="btn ghost" href="#shop" data-go="neck">All pendants</a>
+      </div>
+      <p class="try-note">Shown clipped onto a tennis necklace. Sizes are approximate.</p>
+    </div>
+  </div>
+</section>
+
+<section id="colour">
+  <div class="wrap colour">
+    <div class="colour-img rv">
+      <img class="main" src="assets/colour-dress.jpg" alt="Woman in a colourful dress wearing a blue diamond earring" loading="lazy">
+      <img class="float" src="assets/p-colour-signet-silver.jpg" alt="The Colour Signet in sterling silver" loading="lazy">
+    </div>
+    <div class="rv">
+      <p class="eyebrow">The Colour Signet</p>
+      <h2>Bring on <em>the colour</em></h2>
+      <p class="muted">Choose your birthstone, or simply the colour you love. In sterling silver or solid 9ct gold.</p>
+      <div class="months" id="months"></div>
+      <p class="stone-out" id="stoneOut" aria-live="polite">Pick a month to see its stone.</p>
+      <div class="hero-ctas">
+        <button class="btn" id="signetGold">9ct gold · R 20 000</button>
+        <button class="btn ghost" id="signetSilver">Silver · R 10 000</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="diamonds" id="diamonds">
+  <div class="wrap dia">
+    <div class="dia-img rv"><img src="assets/emerald-charm.jpg" alt="Emerald-cut lab-grown diamond charm" loading="lazy"></div>
+    <div class="rv">
+      <p class="eyebrow">Our diamonds</p>
+      <h2>The same fire. <em>A kinder price.</em></h2>
+      <p style="color:#B9AFA2">Lab-grown diamonds have the same brilliance, clarity and composition as mined stones. They are real diamonds, grown rather than mined.</p>
+      <div class="points">
+        <div class="point"><span>i.</span><div><h3>Real diamonds</h3><p>Chemically and optically the same as mined diamonds. Only where they come from is different.</p></div></div>
+        <div class="point"><span>ii.</span><div><h3>Made to last</h3><p>Rhodium-coated sterling silver, thick 18k gold vermeil (2.5 microns) or solid 9ct gold.</p></div></div>
+        <div class="point"><span>iii.</span><div><h3>Certified</h3><p>Every piece comes with its own certificate of authenticity.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-img"><img src="assets/portrait-tennis.jpg" alt="Portrait wearing a FRANCES diamond necklace" loading="lazy"></div>
+  <div class="about-copy rv">
+    <p class="eyebrow">Our story</p>
+    <h2>Accessible luxury, <em>everyday glamour</em></h2>
+    <p>I've always loved fashion and accessories. I was drawn to the elegance and timelessness of traditional jewellery, but I wanted a more accessible way to wear it.</p>
+    <p>That's why I started FRANCES: pieces that are timeless, elevated and easy to wear, whether you style them the classic way or with jeans and a white tee.</p>
+    <p class="sig">Frances</p>
+  </div>
+</section>
+
+<section id="order">
+  <div class="wrap gift">
+    <div class="gift-imgs rv">
+      <img src="assets/ig-blazer-bracelet.jpg" alt="Wearing a FRANCES diamond tennis bracelet" loading="lazy">
+      <img src="assets/ig-earring-tee.jpg" alt="Diamond studs and layered pendants with a white tee" loading="lazy">
+    </div>
+    <div class="rv">
+      <p class="eyebrow">The perfect gift</p>
+      <h2>Order online, <em>or just ask</em></h2>
+      <p class="muted">Buy straight from the site, or message us about any piece. We're happy to help with sizing, metal and gifting.</p>
+      <ol class="steps">
+        <li><div><b>Add your pieces to your bag</b><span>Choose gold or silver, your ring size or your colour.</span></div></li>
+        <li><div><b>Pay securely</b><span>Card, instant EFT, Apple Pay or Google Pay at checkout.</span></div></li>
+        <li><div><b>Delivered with its certificate</b><span>Every piece arrives with its certificate of authenticity.</span></div></li>
+      </ol>
+      <div class="hero-ctas">
+        <a class="btn" href="#shop">Shop now</a>
+        <a class="btn ghost" href="mailto:info@francesdiamonds.com">Ask a question</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ig">
+  <div class="wrap">
+    <div class="sec-head rv"><div><p class="eyebrow">@francesdiamonds</p><h2>Worn by <em>you</em></h2></div><a class="link" href="https://instagram.com/francesdiamonds" target="_blank" rel="noopener">Follow on Instagram</a></div>
+  </div>
+  <div class="ig-grid">
+    <a href="https://instagram.com/francesdiamonds" target="_blank" rel="noopener"><img src="assets/ig-champagne-silk.jpg" alt="" loading="lazy"></a>
+    <a href="https://instagram.com/francesdiamonds" target="_blank" rel="noopener"><img src="assets/ig-emerald-chain.jpg" alt="" loading="lazy"></a>
+    <a href="https://instagram.com/francesdiamonds" target="_blank" rel="noopener"><img src="assets/ig-earring-tee.jpg" alt="" loading="lazy"></a>
+    <a href="https://instagram.com/francesdiamonds" target="_blank" rel="noopener"><img src="assets/ig-pear-ring.jpg" alt="" loading="lazy"></a>
+    <a href="https://instagram.com/francesdiamonds" target="_blank" rel="noopener"><img src="assets/ig-blazer-bracelet.jpg" alt="" loading="lazy"></a>
+    <a href="https://instagram.com/francesdiamonds" target="_blank" rel="noopener"><img src="assets/ig-colour-charms.jpg" alt="" loading="lazy"></a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div><a class="logo" href="#top">FRANCES</a><p>Lab-grown diamond jewellery.<br>Accessible luxury, everyday glamour.</p></div>
+      <div><h4>Shop</h4><ul><li><a href="#shop">All jewellery</a></li><li><a href="#shop" data-go="ring">Rings</a></li><li><a href="#shop" data-go="neck">Necklaces</a></li><li><a href="#shop" data-go="ear">Earrings</a></li><li><a href="#colour">The Colour Signet</a></li></ul></div>
+      <div><h4>Help</h4><ul><li><a href="#order">Ordering &amp; delivery</a></li><li><a href="#diamonds">Our diamonds</a></li><li><a href="mailto:info@francesdiamonds.com">info@francesdiamonds.com</a></li><li><a href="https://instagram.com/francesdiamonds" target="_blank" rel="noopener">Instagram</a></li></ul></div>
+      <div><h4>New pieces first</h4><p>Hear about new drops before anyone else.</p><form class="news" onsubmit="event.preventDefault();toast('Thanks! (Preview only, nothing was sent.)');this.reset()"><input type="email" required placeholder="Your email" aria-label="Your email"><button>Join</button></form></div>
+    </div>
+    <div class="legal"><span>© 2026 FRANCES</span><span>Preview by <a href="https://website.johlayson.com" target="_blank" rel="noopener">Joh Layson</a></span></div>
+  </div>
+</footer>
+
+<div class="scrim" data-close></div>
+<aside class="drawer" aria-label="Your bag" aria-hidden="true">
+  <div class="drawer-head"><h3>Your bag</h3><button class="x" data-close aria-label="Close">×</button></div>
+
+  <div class="view" id="vBag">
+    <div class="drawer-body">
+      <div id="items"></div>
+      <div class="asks" id="asks"></div>
+    </div>
+    <div class="drawer-foot">
+      <div class="totals"><span>Subtotal</span><b id="subtotal">R 0</b></div>
+      <p>Delivery is added at checkout.</p>
+      <button class="btn" id="toCheckout">Checkout</button>
+      <button class="btn ghost" id="askBtn" hidden>Ask about these pieces</button>
+    </div>
+  </div>
+
+  <div class="view" id="vCheckout" hidden>
+    <div class="drawer-body">
+      <button class="back" data-view="vBag">← Back to bag</button>
+      <div class="sum" id="sum"></div>
+      <form class="form" id="coForm">
+        <label>Full name<input required autocomplete="name"></label>
+        <label>Email<input type="email" required autocomplete="email"></label>
+        <label>Mobile<input type="tel" required autocomplete="tel"></label>
+        <label>Delivery address<input required autocomplete="street-address"></label>
+        <div class="two"><label>City<input required autocomplete="address-level2"></label><label>Postal code<input required autocomplete="postal-code" inputmode="numeric"></label></div>
+        <fieldset class="ship"><legend>Delivery</legend>
+          <label class="opt"><input type="radio" name="ship" value="120" checked><span>Courier, door to door<small>2–4 working days</small></span><b>R 120</b></label>
+          <label class="opt"><input type="radio" name="ship" value="180"><span>Courier + gift box &amp; note<small>Wrapped and ready to give</small></span><b>R 180</b></label>
+        </fieldset>
+        <label>Gift note (optional)<textarea placeholder="Happy birthday! Love, …"></textarea></label>
+      </form>
+    </div>
+    <div class="drawer-foot">
+      <div class="totals"><span>Total</span><b id="total">R 0</b></div>
+      <button class="btn" id="pay" type="submit" form="coForm">Pay securely</button>
+      <p class="paylogos">Card · Instant EFT · Apple Pay · Google Pay</p>
+    </div>
+  </div>
+
+  <div class="view" id="vDone" hidden>
+    <div class="drawer-body done">
+      <div class="tick">✓</div>
+      <h3>Thank you!</h3>
+      <p>Your order is placed. A confirmation and your certificate details are on their way by email.</p>
+      <p class="pnote">Preview only: no payment was taken. On the live site, “Pay securely” opens a South African payment page (for example Yoco, PayFast or Paystack) with card, instant EFT, Apple Pay and Google Pay, and FRANCES gets the order by email.</p>
+      <button class="btn ghost" data-close>Keep browsing</button>
+    </div>
+  </div>
+</aside>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const R = n => 'R ' + Math.round(n).toLocaleString('en-ZA').replace(/[  ]/g, ' ');
+const GOLD = '#D9B871', SILVER = '#D6D8DB';
+// v = metal options. No price = "Price on request" (asked about, not paid online).
+const P = [
+  {id:'oval250', n:'2.50ct Oval Lab-Grown Diamond Ring', c:'ring fine', img:'p-2-50ct-oval-ring', tag:'Statement'},
+  {id:'emer201', n:'2.01ct Emerald-Cut Bezel Diamond Ring', c:'ring fine', img:'p-2-01ct-emerald-bezel-ring'},
+  {id:'trio', n:'Trio Ring', c:'ring demi', img:'p-trio-ring-silver', v:[{m:'Silver', sw:SILVER, p:15000}]},
+  {id:'pear03', n:'0.3 Carat Pear Ring', c:'ring demi', img:'p-0-3-carat-pear-gold', v:[{m:'Gold', sw:GOLD, p:4000},{m:'Silver', sw:SILVER, p:3500}]},
+  {id:'neck100', n:'1.00ct Pear Lab-Grown Diamond Necklace', c:'neck', img:'p-1-00ct-pear-necklace'},
+  {id:'pend236', n:'2.36ct Pear Lab-Grown Diamond Pendant', c:'neck fine', img:'p-2-36ct-pear-pendant'},
+  {id:'blue144', n:'1.44ct Fancy Vivid Blue Marquise Pendant', c:'neck fine', img:'p-1-44ct-blue-marquise-pendant', tag:'Colour'},
+  {id:'blue199', n:'1.99ct Fancy Vivid Blue Oval Pendant', c:'neck fine', img:'p-1-99ct-blue-oval-pendant', tag:'Colour'},
+  {id:'drop1', n:'The 1ct Diamond Drop Earrings', c:'ear demi', img:'p-drop-earrings-gold', v:[{m:'Gold', sw:GOLD, p:7000},{m:'Silver', sw:SILVER, p:7000}]},
+  {id:'huggie', n:'Pear Brilliant Lab-Grown Diamond Huggie', c:'ear', img:'p-pear-huggie'},
+  {id:'brace4', n:'The Four-Stone Pear Bracelet', c:'brace demi', img:'p-four-stone-pear-bracelet', v:[{m:'Gold', sw:GOLD, p:12000},{m:'Silver', sw:SILVER, p:12000}]},
+  {id:'brace1', n:'The Single Pear Bracelet', c:'brace demi', img:'p-single-pear-bracelet', v:[{m:'Gold', sw:GOLD, p:12000},{m:'Silver', sw:SILVER, p:12000, out:true}]},
+  {id:'round200', n:'2.00ct Round Brilliant Lab-Grown Diamond Pendant', c:'neck', img:'p-2-36ct-pear-pendant', thumb:'try-round-200.webp', hide:true},
+  {id:'pear151', n:'1.51ct Pear Brilliant Lab-Grown Diamond Pendant', c:'neck', img:'p-1-00ct-pear-necklace', thumb:'try-pear-151.webp', hide:true},
+  {id:'signet', n:'The Colour Signet', c:'ring colour', img:'p-colour-signet-gold', hide:true, v:[{m:'9ct gold', sw:GOLD, p:20000},{m:'Silver', sw:SILVER, p:10000}]},
+];
+const MONTHS = [
+  ['Jan','Garnet','#9B1B30'],['Feb','Amethyst','#7B5BA6'],['Mar','Aquamarine','#8FC6DD'],['Apr','Diamond','#F4F4F2'],
+  ['May','Emerald','#1E8A55'],['Jun','Alexandrite','#7A6C8F'],['Jul','Ruby','#C21E3A'],['Aug','Peridot','#A7C44A'],
+  ['Sep','Sapphire','#1F4AA8'],['Oct','Pink tourmaline','#E89AA6'],['Nov','Citrine','#E6A82A'],['Dec','Blue topaz','#2BB3C0'],
+];
+const SIZES = 'H I J K L M N O P Q R S T'.split(' ');
+
+const $ = s => document.querySelector(s);
+const byId = id => P.find(p => p.id === id);
+const pick = {};   // chosen metal index per product
+let bag = [];      // {id, v, stone, size, q}
+try { bag = JSON.parse(localStorage.getItem('frances-bag') || '[]').filter(i => byId(i.id)); } catch(e) {}
+const save = () => { try { localStorage.setItem('frances-bag', JSON.stringify(bag)); } catch(e) {} };
+const priceOf = i => { const p = byId(i.id); return p.v ? p.v[i.v].p : 0; };
+const metalOf = i => { const p = byId(i.id); return p.v ? p.v[i.v].m : ''; };
+const isRing = i => byId(i.id).c.split(' ').includes('ring');
+
+function toast(t){ const el=$('#toast'); el.textContent=t; el.classList.add('show'); clearTimeout(toast.t); toast.t=setTimeout(()=>el.classList.remove('show'),2400); }
+
+// product grid
+function cardHTML(p){
+  const k = pick[p.id] || 0, v = p.v && p.v[k];
+  return `<div class="ph">${p.tag?`<span class="tag">${p.tag}</span>`:''}${v&&v.out?'<span class="sold">Sold out</span>':''}<img src="assets/${p.img}.jpg" alt="${p.n}" loading="lazy">
+      <button class="btn add" data-add="${p.id}" ${v&&v.out?'disabled':''}>${v ? (v.out ? 'Sold out' : 'Add to bag') : 'Ask for price'}</button></div>
+    <h3>${p.n}</h3>
+    ${p.v ? `<div class="metals">${p.v.map((o,j)=>`<button class="metal${o.out?' out':''}" style="--sw:${o.sw}" data-metal="${p.id}:${j}" aria-pressed="${j===k}" aria-label="${o.m}"><i></i></button>`).join('')}<span>${v.m}</span></div>` : '<p class="meta">Lab-grown diamond</p>'}
+    <div class="price">${v ? R(v.p) : 'Price on request'}</div>`;
+}
+$('#grid').innerHTML = P.filter(p => !p.hide).map(p => `<article class="card rv" data-c="${p.c}" data-id="${p.id}">${cardHTML(p)}</article>`).join('');
+const redrawCard = id => { const el = document.querySelector(`.card[data-id="${id}"]`); if (el) el.innerHTML = cardHTML(byId(id)); };
+
+// bag
+function render(){
+  $('#count').textContent = bag.reduce((n,i) => n + (i.q||1), 0);
+  const paid = bag.filter(i => priceOf(i)), asks = bag.filter(i => !priceOf(i));
+  $('#items').innerHTML = paid.map(i => { const p = byId(i.id), k = bag.indexOf(i);
+    return `<div class="item"><img src="assets/${p.thumb || p.img + '.jpg'}" alt=""><div>
+      <b>${p.n}${i.stone?` · ${i.stone}`:''}</b><small>${metalOf(i)}</small>
+      <div class="row">
+        <span class="qty"><button data-q="${k}:-1" aria-label="One less">−</button><span>${i.q}</span><button data-q="${k}:1" aria-label="One more">+</button></span>
+        ${isRing(i)?`<select data-size="${k}" aria-label="Ring size"><option value="">Ring size</option>${SIZES.map(s=>`<option ${i.size===s?'selected':''}>${s}</option>`).join('')}</select>`:''}
+        <span class="lp">${R(priceOf(i)*i.q)}</span>
+      </div></div></div>`; }).join('')
+    || (asks.length ? '' : '<p class="empty">Your bag is empty.<br>Pieces you add will show here.</p>');
+  $('#asks').innerHTML = asks.length ? `<h4>To ask about</h4><p>Price on request. We'll reply with the price and how to buy.</p>` + asks.map(i => { const p = byId(i.id), k = bag.indexOf(i);
+    return `<div class="item"><img src="assets/${p.thumb || p.img + '.jpg'}" alt=""><div><b>${p.n}</b><div class="row"><small>Price on request</small><button class="rm" data-rm="${k}">Remove</button></div></div></div>`; }).join('') : '';
+  const sub = paid.reduce((t,i) => t + priceOf(i)*i.q, 0);
+  $('#subtotal').textContent = R(sub);
+  $('#toCheckout').disabled = !paid.length;
+  $('#askBtn').hidden = !asks.length;
+  document.querySelectorAll('.card').forEach(c => { const b = c.querySelector('[data-add]'); const p = byId(c.dataset.id);
+    if (!p.v && b) { const on = bag.some(i => i.id === p.id); b.classList.toggle('in', on); b.textContent = on ? 'Added ✓' : 'Ask for price'; } });
+}
+function add(id, v, stone){
+  const p = byId(id);
+  if (!p.v) {
+    const k = bag.findIndex(i => i.id === id);
+    if (k > -1) { bag.splice(k,1); toast('Removed from your bag'); } else { bag.push({id, q:1}); toast('Added to your bag to ask about'); }
+  } else {
+    const ex = bag.find(i => i.id === id && i.v === v && i.stone === stone);
+    if (ex) ex.q++; else bag.push({id, v, stone, q:1});
+    toast(`Added to your bag · ${p.n}`);
+    const b = document.querySelector(`.card[data-id="${id}"] [data-add]`);
+    if (b) { b.classList.add('in'); b.textContent = 'Added ✓'; setTimeout(() => { b.classList.remove('in'); b.textContent = 'Add to bag'; }, 1400); }
+  }
+  save(); render();
+}
+function view(id){ ['vBag','vCheckout','vDone'].forEach(v => $('#'+v).hidden = v !== id); }
+function openDrawer(on){ document.body.classList.toggle('open', on); $('.drawer').setAttribute('aria-hidden', !on); if (on) view('vBag'); }
+
+document.addEventListener('click', e => {
+  const a = e.target.closest('[data-add]'); if (a && !a.disabled) { e.preventDefault(); add(a.dataset.add, pick[a.dataset.add] || 0); }
+  const m = e.target.closest('[data-metal]'); if (m) { const [id,j] = m.dataset.metal.split(':'); pick[id] = +j; redrawCard(id); }
+  const q = e.target.closest('[data-q]'); if (q) { const [k,d] = q.dataset.q.split(':').map(Number); bag[k].q += d; if (bag[k].q < 1) bag.splice(k,1); save(); render(); }
+  const r = e.target.closest('[data-rm]'); if (r) { bag.splice(+r.dataset.rm,1); save(); render(); }
+  const vw = e.target.closest('[data-view]'); if (vw) view(vw.dataset.view);
+  if (e.target.closest('[data-open]')) { e.preventDefault(); openDrawer(true); }
+  if (e.target.closest('[data-close]')) openDrawer(false);
+  const g = e.target.closest('[data-go]');
+  if (g) filter(['ring','neck','ear','brace','demi','fine'].includes(g.dataset.go) ? g.dataset.go : 'all');
+});
+document.addEventListener('change', e => { const s = e.target.closest('[data-size]'); if (s) { bag[+s.dataset.size].size = s.value; save(); } });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') openDrawer(false); });
+
+// checkout (preview: no payment is taken)
+const ship = () => +(document.querySelector('[name=ship]:checked') || {value:0}).value;
+function totals(){
+  const paid = bag.filter(i => priceOf(i)), sub = paid.reduce((t,i) => t + priceOf(i)*i.q, 0);
+  $('#sum').innerHTML = paid.map(i => `<div><span>${i.q} × ${byId(i.id).n}${i.stone?` (${i.stone})`:''}, ${metalOf(i)}${i.size?`, size ${i.size}`:''}</span><span>${R(priceOf(i)*i.q)}</span></div>`).join('')
+    + `<div><span>Delivery</span><span>${R(ship())}</span></div>`;
+  $('#total').textContent = R(sub + ship());
+  $('#pay').textContent = 'Pay ' + R(sub + ship()) + ' securely';
+}
+$('#toCheckout').addEventListener('click', () => {
+  const noSize = bag.find(i => priceOf(i) && isRing(i) && !i.size);
+  if (noSize) { toast('Pick a ring size first'); document.querySelector(`[data-size="${bag.indexOf(noSize)}"]`).focus(); return; }
+  totals(); view('vCheckout');
+});
+$('#coForm').addEventListener('change', totals);
+$('#coForm').addEventListener('submit', e => {
+  e.preventDefault();
+  bag = bag.filter(i => !priceOf(i)); save(); render(); e.target.reset(); view('vDone');
+});
+
+// ask about price-on-request pieces by email
+$('#askBtn').addEventListener('click', () => {
+  const lines = bag.filter(i => !priceOf(i)).map(i => '- ' + byId(i.id).n);
+  location.href = 'mailto:info@francesdiamonds.com?subject=' + encodeURIComponent('Price enquiry') + '&body=' + encodeURIComponent(`Hi FRANCES! Could you send me the price for:\n${lines.join('\n')}\n\nThank you!`);
+});
+
+// try it on: clip a pendant onto the model's chain
+const TRY = [
+  {id:'pear151', label:'1.51ct Pear', src:'try-pear-151', r:.413},
+  {id:'round200', label:'2.00ct Round', src:'try-round-200', r:.49},
+  {id:'huggie', label:'Pear Huggie', src:'try-pear-huggie', r:.365},
+  {id:'pend236', label:'2.36ct Pear, black', src:'try-pear-236', r:.367},
+  {id:'blue199', label:'1.99ct Blue Oval', src:'try-blue-oval', r:.435},
+  {id:'blue144', label:'1.44ct Blue Marquise', src:'try-blue-marquise', r:.807, h:6.4},
+];
+let tryK = 0, zoomed = false;
+const stage = $('#stage'), inner = $('#inner'), pend = $('#pend');
+$('#picks').innerHTML = TRY.map((t,i) => `<button class="pick" data-try="${i}" aria-pressed="${i===0}"><img src="assets/${t.src}.webp" alt="" loading="lazy">${t.label}</button>`).join('');
+function place(){
+  const W = stage.clientWidth, H = stage.clientHeight, IH = W * 1600 / 900;
+  let s = 1, tx = 0, ty = -IH * 0.19;                    // default: crop to face and neckline
+  if (zoomed) { s = 2.1; const px = W * .5667, py = IH * .655; tx = W / 2 - s * px; ty = H / 2 - s * py; }
+  tx = Math.min(0, Math.max(W - W * s, tx)); ty = Math.min(0, Math.max(H - IH * s, ty));
+  inner.style.transform = `translate(${tx}px,${ty}px) scale(${s})`;
+  $('#zoomBtn').textContent = zoomed ? 'See the full look' : 'Zoom in';
+  stage.classList.toggle('zoom', zoomed);
+}
+function tryOn(k){
+  tryK = k; const t = TRY[k];
+  pend.src = `assets/${t.src}.webp`;
+  pend.style.width = ((t.h || 8) * t.r) + '%';
+  pend.classList.remove('swing'); void pend.offsetWidth; pend.classList.add('swing');
+  document.querySelectorAll('.pick').forEach(b => b.setAttribute('aria-pressed', +b.dataset.try === k));
+  $('#stageName').textContent = byId(t.id).n.replace(' Lab-Grown Diamond', '');
+  const inBag = bag.some(i => i.id === t.id);
+  $('#tryAdd').textContent = inBag ? 'Added to your bag ✓' : 'Ask for price';
+}
+$('#picks').addEventListener('click', e => { const b = e.target.closest('.pick'); if (b) tryOn(+b.dataset.try); });
+stage.addEventListener('click', () => { zoomed = !zoomed; place(); });
+$('#tryAdd').addEventListener('click', () => { add(TRY[tryK].id); tryOn(tryK); });
+new ResizeObserver(place).observe(stage);
+tryOn(0); place();
+
+// filters
+function filter(f){
+  document.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed', c.dataset.f === f));
+  document.querySelectorAll('.card').forEach(c => { c.hidden = f !== 'all' && !c.dataset.c.split(' ').includes(f); c.classList.add('in'); });
+}
+document.querySelectorAll('.chip').forEach(c => c.addEventListener('click', () => filter(c.dataset.f)));
+
+// birthstone picker
+let month = null;
+$('#months').innerHTML = MONTHS.map(([m,s,c],i) => `<button class="month" style="--c:${c}" data-m="${i}" aria-pressed="false"><i></i>${m}</button>`).join('');
+$('#months').addEventListener('click', e => {
+  const b = e.target.closest('.month'); if (!b) return;
+  month = +b.dataset.m;
+  document.querySelectorAll('.month').forEach(x => x.setAttribute('aria-pressed', x === b));
+  const [m,s] = MONTHS[month];
+  $('#stoneOut').innerHTML = `<b>${s}</b><br>The ${m} birthstone colour.`;
+});
+[['#signetGold',0],['#signetSilver',1]].forEach(([sel,v]) => $(sel).addEventListener('click', () => {
+  if (month === null) { toast('Pick a month or colour first'); return; }
+  add('signet', v, MONTHS[month][1]);
+}));
+
+// mobile menu
+$('.menu-btn').addEventListener('click', e => {
+  const on = $('.nav').classList.toggle('show'); e.currentTarget.setAttribute('aria-expanded', on);
+});
+document.querySelectorAll('.nav a').forEach(a => a.addEventListener('click', () => $('.nav').classList.remove('show')));
+
+// reveal on scroll
+const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(x => { if (x.isIntersecting) { x.target.classList.add('in'); io.unobserve(x.target); } }), {rootMargin:'0px 0px -8% 0px'}) : null;
+document.querySelectorAll('.rv').forEach(el => io ? io.observe(el) : el.classList.add('in'));
+
+render();
+</script>
+</body>
+</html>
